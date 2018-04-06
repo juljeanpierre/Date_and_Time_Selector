@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="template.selector.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a date"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Open date Picker"
+        android:layout_alignTop="@+id/textViewDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Time"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/dateButton"
+        android:layout_alignEnd="@+id/textViewDate" />
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Open Time Picker"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/textViewTime"
+        android:layout_alignStart="@+id/dateButton" />
+
+
+</RelativeLayout>
